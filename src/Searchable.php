@@ -11,6 +11,12 @@ trait Searchable
         $builder->when(request()->has($input),function($q) use($searchIn,$input){    
             $q->where($searchIn, 'LIKE' ,'%'.request($input).'%')->get();
         });
-    }    
+    }
+    public function scopeJsonSearch(Builder $builder,string $searchIn,$input)
+    {
+        $builder->when(request()->has($input),function($q) use($searchIn,$input){    
+            $q->whereJsonContains($searchIn, request($input))->get();
+        });
+    }  
 
 }
