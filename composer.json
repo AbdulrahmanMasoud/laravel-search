@@ -1,0 +1,29 @@
+{
+    "name": "theamasoud/laravel-search",
+    "description": "Laravel search",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Abdulrahman Masoud",
+        "email": "theamasoud@gmail.com"
+      }
+    ],
+    "autoload": {
+        "psr-4": {
+          "TheAMasoud\\LaravelSearch\\": "src/"
+        }
+    },    
+    "require": {
+      "phpunit/phpunit": "^9.5"
+    },
+    "require-dev": {},
+    "extra": {
+      "laravel": {
+        "providers": [
+          "TheAMasoud\\LaravelSearch\\Providers\\SearchServiceProvider"
+        ]
+      }
+    }
+    
+  }
