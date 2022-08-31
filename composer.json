@@ -1,6 +1,6 @@
 {
     "name": "theamasoud/laravel-search",
-    "description": "Laravel search",
+    "description": "A Laravel package to search easily in columns, multiple columns and json columns",
     "type": "library",
     "license": "MIT",
     "authors": [
